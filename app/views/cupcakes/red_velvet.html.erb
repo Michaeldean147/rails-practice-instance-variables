@@ -1,8 +1,45 @@
-<h1>Shopping List</h1>
+<div>
+  <h1>Cupcakes come many sizes</h1>
 
-<dl class="dl-horizontal">
-  <% @ingredients.each do |ingredient, amount| %>
-    <dt><%= ingredient %></dt>
-    <dd><%= amount %></dd>
-  <% end %>
-</dl>
+  <ul>
+    <% @sizes.each do |size| %>
+      <li><%= size %></li>
+    <% end %>
+  </ul>
+</div>
+
+
+<div>
+  <h1>Shopping List</h1>
+
+  <dl class="dl-horizontal">
+    <% @ingredients.each do |ingredient, amount| %>
+      <dt><%= ingredient %></dt>
+      <dd><%= amount %></dd>
+      <% end %>
+    </dl>
+</div>
+
+
+<div>
+
+  <h1>Toppings!</h1>
+
+  <ul>
+    <% @toppings.each do |topping| %>
+      <li><%= topping %></li>
+      <% end %>
+    </ul>
+</div>
+
+<div>
+
+  <h1>Frostings!</h1>
+
+  <dl class = "dl-horizontal">
+    <% @frostings.each do |frostings, amount| %>
+      <dt><%= frostings %></dt>
+      <dd><%= amount %></dd>
+      <% end %>
+    </dl>
+</div>
